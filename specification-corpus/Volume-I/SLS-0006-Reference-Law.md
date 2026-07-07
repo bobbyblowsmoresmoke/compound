@@ -1,7 +1,7 @@
 # SLS-0006 — Reference Law
 
 Status: Accepted  
-Version: 1.0  
+Version: 1.1  
 Authority: Spider Labs Corpus  
 Depends On: SLS-0002, SLS-0018
 
@@ -11,9 +11,31 @@ This specification defines how the Corpus prevents duplicate laws, duplicate con
 
 ## Core law
 
+Every authoritative architectural element has exactly one home.
+
 Every normative requirement has exactly one authoritative definition.
 
 Other specifications reference the authoritative definition.
+
+## Authority classes
+
+### Concept authority
+
+Concepts define meaning.
+
+Every core concept has exactly one authoritative definition.
+
+### Law authority
+
+Laws define obligations.
+
+Every normative requirement has exactly one authoritative definition.
+
+### Contract authority
+
+Contracts define interaction.
+
+Every interface, object contract, pipeline contract, and lifecycle contract has exactly one authoritative definition.
 
 ## Normative language
 
