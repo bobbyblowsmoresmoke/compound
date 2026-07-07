@@ -1,9 +1,9 @@
 # SLS-0023 — Assay Specification
 
 Status: Accepted  
-Version: 1.0  
+Version: 1.1  
 Authority: Spider Labs Domain  
-Depends On: SLS-0002, SLS-0003, SLS-0020
+Depends On: SLS-0002, SLS-0003, SLS-0020, SLS-0026
 
 ## Purpose
 
@@ -20,6 +20,31 @@ Its job is diagnosis, not praise.
 Assays must be deterministic, reproducible, and inspectable.
 
 The same Specimen revision, Formula context, Assay definition, and Assay configuration must produce the same result.
+
+## Assessment status
+
+Every Assay result must produce an assessment status.
+
+Valid statuses are:
+
+- Pass
+- Warn
+- Fail
+- Blocked
+
+Pass means required checks were satisfied.
+
+Warn means the artifact is usable but has recommended improvements.
+
+Fail means one or more required checks failed.
+
+Blocked means evaluation cannot complete because required inputs or execution conditions are missing.
+
+The status must be derived from Findings.
+
+The status must be explainable.
+
+The status must not replace Findings.
 
 ## Assay categories
 
@@ -82,8 +107,8 @@ It should represent the percentage of required and recommended checks that pass 
 
 An Assay result must include:
 
-- overall status
-- score breakdown
+- assessment status
+- score breakdown when scoring is used
 - findings
 - severity
 - recommendations
