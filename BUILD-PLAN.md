@@ -113,3 +113,11 @@ Do not put marketplace-specific logic in core.
 ## Output expectation
 
 Open a draft PR with implementation notes, tests run, Corpus references, and any experiments created.
+
+## Execution handoff
+
+When the Corpus is reviewed and frozen, the user may hand this build plan to the current builder.
+
+As of this pass, that builder is Qwen through the active coding harness.
+
+Future builders may replace this context without changing the Corpus.
