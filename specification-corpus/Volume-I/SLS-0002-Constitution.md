@@ -1,15 +1,53 @@
 # SLS-0002 — Constitution
 
 Status: Accepted  
-Version: 1.0  
+Version: 1.1  
 Authority: Spider Labs Architecture  
-Depends On: SLS-0001
+Depends On: SLS-0001, SLS-0006
 
 ## Purpose
 
-This specification defines the immutable laws of Spider Labs software.
+This specification defines the constitutional principles of Spider Labs software.
 
-Every product and implementation must comply.
+Every product, specification, build plan, and implementation must comply.
+
+## Corpus authority
+
+The Corpus is the authoritative source of architectural truth.
+
+When implementation and the Corpus disagree, the implementation is incorrect or the Corpus must be formally amended.
+
+Implementation shall not redefine architecture.
+
+Architecture evolves through the Corpus, not through code.
+
+## Single authority principles
+
+### Single Concept Authority
+
+Every core concept has exactly one authoritative definition.
+
+Concepts define meaning.
+
+### Single Law Authority
+
+Every normative requirement has exactly one authoritative definition.
+
+Normative requirements are defined once.
+
+Normative requirements may be referenced many times.
+
+Normative requirements shall not be independently restated, paraphrased, or redefined.
+
+Dependent specifications shall reference the authoritative definition.
+
+Laws define obligations.
+
+### Single Contract Authority
+
+Every contract has exactly one authoritative definition.
+
+Contracts define interaction.
 
 ## Engineering axioms
 
