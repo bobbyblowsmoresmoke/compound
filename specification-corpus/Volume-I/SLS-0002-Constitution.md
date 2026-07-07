@@ -1,7 +1,7 @@
 # SLS-0002 — Constitution
 
 Status: Accepted  
-Version: 1.1  
+Version: 1.2  
 Authority: Spider Labs Architecture  
 Depends On: SLS-0001, SLS-0006
 
@@ -11,17 +11,11 @@ This specification defines the constitutional principles of Spider Labs software
 
 Every product, specification, build plan, and implementation must comply.
 
-## Corpus authority
+## Constitutional Principle 1 — Single Authority
 
-The Corpus is the authoritative source of architectural truth.
+Authoritative concepts, laws, and contracts each have exactly one home.
 
-When implementation and the Corpus disagree, the implementation is incorrect or the Corpus must be formally amended.
-
-Implementation shall not redefine architecture.
-
-Architecture evolves through the Corpus, not through code.
-
-## Single authority principles
+Other specifications reference authority instead of redefining it.
 
 ### Single Concept Authority
 
@@ -49,93 +43,23 @@ Every contract has exactly one authoritative definition.
 
 Contracts define interaction.
 
-## Engineering axioms
+## Constitutional Principle 2 — Corpus Authority
 
-### AX-001 — Ownership
+The Corpus is the authoritative source of architectural truth.
 
-Users own their work.
+The Corpus defines concepts, laws, contracts, and architectural invariants.
 
-Always.
+Implementation realizes the Corpus.
 
-### AX-002 — Preservation
+Implementation does not redefine the Corpus.
 
-Original artifacts are never mutated.
+When implementation and the Corpus disagree, one of two conditions exists:
 
-### AX-003 — Repeatability
+1. The implementation is incorrect and shall be corrected.
+2. The Corpus no longer reflects the intended architecture and shall be amended through the Corpus itself.
 
-Every refinement is reproducible.
+Architectural change occurs by changing the Corpus.
 
-### AX-004 — Human authority
+Code follows the Corpus.
 
-AI is advisory.
-
-Never authoritative.
-
-### AX-005 — Interface durability
-
-Interfaces outlive implementations.
-
-### AX-006 — Explainability
-
-Every recommendation must be explainable.
-
-### AX-007 — No hidden state
-
-Hidden state is technical debt.
-
-### AX-008 — Trust over convenience
-
-Trust is more valuable than convenience.
-
-## Catalyst laws
-
-A Catalyst:
-
-- may suggest
-- may transform
-- may annotate
-- must explain
-- must report execution metadata
-- must preserve provenance
-- must expose uncertainty
-- must never mutate the original Specimen
-
-## Formula laws
-
-A Formula:
-
-- is versioned
-- is deterministic where possible
-- is immutable after release
-- is inspectable
-- declares compatibility
-
-## Specimen laws
-
-A Specimen:
-
-- has identity
-- has provenance
-- has revisions
-- has timestamps
-- is immutable
-
-## Assay laws
-
-An Assay:
-
-- diagnoses
-- never flatters
-- never hides defects
-- cites findings
-- recommends improvement
-- remains deterministic
-
-## Notebook laws
-
-Every experiment:
-
-- is recorded
-- can be replayed
-- can be audited
-- can be reproduced
+The Corpus does not follow the code.
