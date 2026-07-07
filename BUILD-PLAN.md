@@ -18,6 +18,8 @@ If a design question is not answered by the Corpus, create an experiment or stop
 
 Current builder: Qwen through the active coding harness.
 
+Primary implementation language: Python.
+
 This is execution context only.
 
 It is not architecture.
@@ -37,6 +39,8 @@ It is not a Corpus invariant.
 ## Phase 0 Repository scaffold
 
 Create the project layout authorized by SLS-0050.
+
+Use Python for the initial reference implementation.
 
 Add package metadata, test framework, formatter, linter, and local development commands.
 
@@ -118,6 +122,6 @@ Open a draft PR with implementation notes, tests run, Corpus references, and any
 
 When the Corpus is reviewed and frozen, the user may hand this build plan to the current builder.
 
-As of this pass, that builder is Qwen through the active coding harness.
+As of this pass, that builder is Qwen through the active coding harness, using Python for the initial reference implementation.
 
-Future builders may replace this context without changing the Corpus.
+Future builders or languages may replace this context without changing the Corpus.
